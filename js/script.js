@@ -1,5 +1,16 @@
 const grid = document.getElementById('grid');
 
+//Resize Button
+document.querySelector('.resize').addEventListener('click', () => {
+  document.querySelectorAll('.cell').forEach((cell) => grid.removeChild(cell));
+  createGrid();
+});
+
+//Reset Button
+const reset = document.querySelector('.reset');
+reset.addEventListener('mouseover', () => document.querySelector('audio').play());
+reset.addEventListener('click', resetGrid);
+
 createGrid();
 
 function createGrid() {
@@ -16,4 +27,8 @@ function createGrid() {
     document.querySelectorAll('.cell').forEach((cell) => {
       cell.addEventListener('mouseenter', () => cell.classList.add('cellON'));
   });
+};
+
+function resetGrid() {
+  document.querySelectorAll('.cell').forEach((cell) => cell.classList.remove('cellON'));
 };
