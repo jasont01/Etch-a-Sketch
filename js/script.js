@@ -2,8 +2,8 @@ const grid = document.getElementById('grid');
 
 //Resize Button
 document.querySelector('.resize').addEventListener('click', () => {
-  document.querySelectorAll('.cell').forEach((cell) => grid.removeChild(cell));
-  createGrid();
+    document.querySelectorAll('.cell').forEach((cell) => grid.removeChild(cell));
+    createGrid();
 });
 
 //Reset Button
@@ -25,10 +25,10 @@ function createGrid() {
     };
 
     document.querySelectorAll('.cell').forEach((cell) => {
-      cell.addEventListener('mouseenter', () => cell.classList.add('cellON'));
-  });
+        cell.addEventListener('mouseenter', () => cell.classList.add('cellON'));
+    });
 };
 
 function resetGrid() {
-  document.querySelectorAll('.cell').forEach((cell) => cell.classList.remove('cellON'));
+    document.querySelectorAll('.cell').forEach((cell) => cell.classList.remove('cellON'));
 };
