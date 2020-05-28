@@ -12,4 +12,8 @@ function createGrid() {
         newcell.style.height = `${cellSize}px`;
         grid.appendChild(newcell);
     };
+
+    document.querySelectorAll('.cell').forEach((cell) => {
+      cell.addEventListener('mouseenter', () => cell.classList.add('cellON'));
+  });
 };
