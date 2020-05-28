@@ -5,7 +5,7 @@
     <img src="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" alt="Logo">
   </a>
 
-  <h3 align="center">Google-Homepage</h3>
+  <h3 align="center">Etch-a-Sketch</h3>
 
   <p align="center">
     A JavaScript/DOM project for The Odin Project
